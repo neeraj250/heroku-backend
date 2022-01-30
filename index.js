@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const url = 'mongodb://localhost/users'
 
 const app = new express()
+const port = process.env.PORT || 3000
 
 mongoose.connect(url,{useNewUrlParser:true})
 
